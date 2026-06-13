@@ -243,3 +243,8 @@ textarea { resize: vertical; }
   .floating-card { display: none; }
   h1 { font-size: 3.25rem; }
 }
+.site-logo {
+  height: 70px;
+  width: auto;
+  display: block;
+}
