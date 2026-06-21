@@ -50,6 +50,7 @@
       <a href="#process">Order Info</a>
       <a href="#faq">FAQ</a>
       <a href="#reviews">Reviews</a>
+      <a href="#location">Location</a>
       <a class="nav-cta" href="#enquiry">Enquire</a>
       <div class="nav-social">
         <a class="nav-social-btn nav-social-wa" href="https://wa.me/447471942946" target="_blank" rel="noopener" aria-label="WhatsApp">
@@ -93,9 +94,31 @@
         </div>
       </div>
 
-      <div class="hero-art" aria-label="Decorative cake display">
-        <div class="cake-card main-cake">
-          <img src="assets/cake-hero.svg" alt="Illustrated pink bespoke celebration cake" />
+      <div class="hero-art" aria-label="Cake photo collage">
+        <div class="hero-collage">
+          <div class="collage-main">
+            <img src="assets/gallery/wedding/wedding-3.jpeg" alt="Wedding cake" />
+          </div>
+          <div class="collage-side">
+            <div class="collage-item">
+              <img src="assets/gallery/birthday-girl-4.JPEG" alt="Birthday cake for her" />
+            </div>
+            <div class="collage-item">
+              <img src="assets/gallery/birthday-boy-5.JPEG" alt="Birthday cake for him" />
+            </div>
+            <div class="collage-item">
+              <img src="assets/gallery/forher-3.JPEG" alt="Cakes for her" />
+            </div>
+            <div class="collage-item">
+              <img src="assets/gallery/forhim-1.JPEG" alt="Cakes for him" />
+            </div>
+            <div class="collage-item">
+              <img src="assets/gallery/baby-2.JPEG" alt="Baby shower cake" />
+            </div>
+            <div class="collage-item">
+              <img src="assets/gallery/spotlight-1.JPEG" alt="In the Spotlight" />
+            </div>
+          </div>
         </div>
 
         <div class="floating-card card-one">
@@ -395,7 +418,19 @@
       <p class="eyebrow" style="text-align:center;">Google Reviews</p>
       <h2 class="reviews-heading">What customers are saying</h2>
 
-      <div id="shapo-widget-916c8734f30cdab7cc21"></div>
+      <div class="reviews-summary">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="28" height="28"><path fill="#4285F4" d="M45.12 24.5c0-1.56-.14-3.06-.4-4.5H24v8.51h11.84c-.51 2.75-2.06 5.08-4.39 6.64v5.52h7.11c4.16-3.83 6.56-9.47 6.56-16.17z"/><path fill="#34A853" d="M24 46c5.94 0 10.92-1.97 14.56-5.33l-7.11-5.52c-1.97 1.32-4.49 2.1-7.45 2.1-5.73 0-10.58-3.87-12.32-9.07H4.34v5.7C7.96 41.07 15.4 46 24 46z"/><path fill="#FBBC05" d="M11.68 28.18A13.9 13.9 0 0 1 10.8 24c0-1.45.25-2.86.68-4.18v-5.7H4.34A23.93 23.93 0 0 0 0 24c0 3.87.93 7.53 2.57 10.76l7.11-5.7-.0-.88z"/><path fill="#EA4335" d="M24 10.75c3.23 0 6.13 1.11 8.41 3.29l6.31-6.31C34.91 4.18 29.93 2 24 2 15.4 2 7.96 6.93 4.34 14.12l7.34 5.7C13.42 14.62 18.27 10.75 24 10.75z"/></svg>
+        <div class="reviews-rating">
+          <span class="reviews-stars">★★★★★</span>
+          <span class="reviews-score">5.0</span>
+          <!-- Update this number when your review count changes -->
+          <span class="reviews-count">· <span id="review-count">205</span> reviews</span>
+        </div>
+      </div>
+
+      <div class="reviews-carousel" id="reviews-carousel">
+        <div class="review-card" style="min-width:280px;justify-content:center;align-items:center;color:rgba(61,37,32,.4);font-size:.9rem;">Loading reviews…</div>
+      </div>
 
       <p style="text-align:center;margin-top:32px;">
         <a class="btn btn-google-review" href="https://g.page/r/CQqQOheIDRpREAE/review" target="_blank" rel="noopener">
@@ -458,6 +493,21 @@
 
       </div>
     </section>
+
+    <section class="location-section section-pad" id="location">
+      <div class="section-heading">
+        <p class="eyebrow">Find Us</p>
+        <h2>Our Location</h2>
+        <p>Based in West London — collection available, delivery on request.</p>
+      </div>
+      <div class="map-container">
+        <iframe
+          src="https://www.google.com/maps/embed/v1/place?key=AIzaSyATPy80jq_NlHRALH1rceviPF8jRXMsW_Q&q=place_id:ChIJsS-_gcRzdkgRCpA6F4gNGlE&zoom=14"
+          width="100%" height="450" style="border:0;" allowfullscreen loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade" title="Simply Sweet By Asifa location">
+        </iframe>
+      </div>
+    </section>
   </main>
 
   <footer class="site-footer">
@@ -476,11 +526,96 @@
       <a href="#enquiry">Enquire</a>
       <a href="#faq">FAQ</a>
     </div>
+
+    <div class="fhrs-badge" aria-label="Food Hygiene Rating 5 — Very Good">
+      <div class="fhrs-top">FOOD HYGIENE RATING</div>
+      <div class="fhrs-numbers">
+        <span>0</span><span>1</span><span>2</span><span>3</span><span>4</span><span class="fhrs-active">5</span>
+      </div>
+      <div class="fhrs-bottom">VERY GOOD</div>
+    </div>
   </footer>
 
   <div class="copyright-bar">© 2026 Simply Sweet By Asifa. All rights reserved.</div>
 
   <script src="script.js"></script>
-  <script id="shapo-embed-js" type="text/javascript" src="https://cdn.shapo.io/js/embed.js" defer></script>
+  <script>
+    const GOOGLE_ICON_SVG = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" width="20" height="20"><path fill="#4285F4" d="M45.12 24.5c0-1.56-.14-3.06-.4-4.5H24v8.51h11.84c-.51 2.75-2.06 5.08-4.39 6.64v5.52h7.11c4.16-3.83 6.56-9.47 6.56-16.17z"/><path fill="#34A853" d="M24 46c5.94 0 10.92-1.97 14.56-5.33l-7.11-5.52c-1.97 1.32-4.49 2.1-7.45 2.1-5.73 0-10.58-3.87-12.32-9.07H4.34v5.7C7.96 41.07 15.4 46 24 46z"/><path fill="#FBBC05" d="M11.68 28.18A13.9 13.9 0 0 1 10.8 24c0-1.45.25-2.86.68-4.18v-5.7H4.34A23.93 23.93 0 0 0 0 24c0 3.87.93 7.53 2.57 10.76l7.11-5.7-.0-.88z"/><path fill="#EA4335" d="M24 10.75c3.23 0 6.13 1.11 8.41 3.29l6.31-6.31C34.91 4.18 29.93 2 24 2 15.4 2 7.96 6.93 4.34 14.12l7.34 5.7C13.42 14.62 18.27 10.75 24 10.75z"/></svg>`;
+
+    const AVATAR_COLORS = ['#7f3344','#1a73e8','#34a853','#ea4335','#f5a623'];
+
+    function starsHTML(rating) {
+      return '★'.repeat(rating) + '☆'.repeat(5 - rating);
+    }
+
+    function initGoogleReviews() {
+      const service = new google.maps.places.PlacesService(document.createElement('div'));
+      service.getDetails({
+        placeId: 'ChIJsS-_gcRzdkgRCpA6F4gNGlE',
+        fields: ['rating', 'user_ratings_total', 'reviews']
+      }, (place, status) => {
+        if (status !== google.maps.places.PlacesServiceStatus.OK || !place) return;
+
+        // Update rating summary
+        const countEl = document.getElementById('review-count');
+        const scoreEl = document.querySelector('.reviews-score');
+        if (countEl && place.user_ratings_total) countEl.textContent = place.user_ratings_total;
+        if (scoreEl && place.rating) scoreEl.textContent = place.rating.toFixed(1);
+
+        // Render review cards (only those with written text)
+        const carousel = document.getElementById('reviews-carousel');
+        if (!carousel || !place.reviews || !place.reviews.length) return;
+
+        const writtenReviews = place.reviews.filter(r => r.text && r.text.trim().length > 10);
+        if (!writtenReviews.length) return;
+
+        carousel.innerHTML = '';
+
+        writtenReviews.forEach((review, i) => {
+          const name = review.author_name || 'Google Reviewer';
+          const photo = review.profile_photo_url;
+          const rating = review.rating || 5;
+          const text = review.text || '';
+          const time = review.relative_time_description || '';
+          const initial = name.charAt(0).toUpperCase();
+          const color = AVATAR_COLORS[i % AVATAR_COLORS.length];
+
+          const avatarHTML = photo
+            ? `<img src="${photo}" alt="${name}" style="width:40px;height:40px;border-radius:50%;object-fit:cover;flex-shrink:0;">`
+            : `<div class="reviewer-avatar" style="background:${color};">${initial}</div>`;
+
+          const card = document.createElement('div');
+          card.className = 'review-card';
+          card.innerHTML = `
+            <div class="review-card-top">
+              ${avatarHTML}
+              <div style="flex:1;min-width:0;">
+                <div class="reviewer-name">${name}</div>
+                <div class="review-stars" style="color:#f5a623;">${starsHTML(rating)}</div>
+              </div>
+              ${GOOGLE_ICON_SVG}
+            </div>
+            <p class="review-text">${text}</p>
+            ${time ? `<div style="font-size:.75rem;color:rgba(61,37,32,.4);margin-top:auto;">${time}</div>` : ''}
+          `;
+          carousel.appendChild(card);
+        });
+
+        // CTA card
+        const cta = document.createElement('div');
+        cta.className = 'review-card review-card-cta';
+        cta.innerHTML = `
+          <div class="review-cta-inner">
+            ${GOOGLE_ICON_SVG.replace('width="20" height="20"', 'width="40" height="40"')}
+            <p class="review-cta-text">Enjoyed your cake?</p>
+            <a class="review-cta-btn" href="https://g.page/r/CQqQOheIDRpREAE/review" target="_blank" rel="noopener">Leave us a review on Google</a>
+          </div>
+        `;
+        carousel.appendChild(cta);
+
+      });
+    }
+  </script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyATPy80jq_NlHRALH1rceviPF8jRXMsW_Q&libraries=places&callback=initGoogleReviews"></script>
 </body>
 </html>
