@@ -317,6 +317,47 @@ body { padding-bottom: 36px; }
   .testimonials { padding: 62px 16px; }
   .hero-actions, .site-footer, .footer-links { flex-direction: column; align-items: stretch; }
   .floating-card { display: none; }
+  .hero-art { min-height: auto; }
+  .hero-collage {
+    grid-template-columns: 1fr;
+    height: auto;
+    border-radius: 24px;
+  }
+  .collage-main { height: auto; }
+  .collage-main img { aspect-ratio: 4 / 5; height: auto; }
+  .collage-side {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: none;
+    height: auto;
+  }
+  .collage-item {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    height: auto;
+    border-radius: 18px;
+    overflow: hidden;
+    background: #fff8f2;
+  }
+  .collage-item img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    object-fit: cover;
+    object-position: center;
+    background: #fff8f2;
+  }
+  .collage-item:last-child img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    object-fit: cover;
+    object-position: center bottom;
+  }
   h1 { font-size: 2.6rem; }
   .gallery-tabs { gap: 6px; }
   .gallery-tab { font-size: .8rem; padding: .45rem .9rem; }
