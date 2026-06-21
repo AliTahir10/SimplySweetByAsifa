@@ -13,6 +13,20 @@ siteNav.querySelectorAll('a').forEach((link) => {
   });
 });
 
+// Logo scrolls to very top
+document.getElementById('logo-home').addEventListener('click', (e) => {
+  e.preventDefault();
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+});
+
+// Prevent right-click / long-press saving of images
+document.addEventListener('contextmenu', (e) => {
+  if (e.target.tagName === 'IMG') e.preventDefault();
+});
+document.addEventListener('dragstart', (e) => {
+  if (e.target.tagName === 'IMG') e.preventDefault();
+});
+
 // Gallery tabs
 document.querySelectorAll('.gallery-tab').forEach((tab) => {
   tab.addEventListener('click', () => {
