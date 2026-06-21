@@ -12,3 +12,13 @@ siteNav.querySelectorAll('a').forEach((link) => {
     navToggle.setAttribute('aria-expanded', 'false');
   });
 });
+
+// Gallery tabs
+document.querySelectorAll('.gallery-tab').forEach((tab) => {
+  tab.addEventListener('click', () => {
+    document.querySelectorAll('.gallery-tab').forEach(t => t.classList.remove('active'));
+    document.querySelectorAll('.gallery-grid').forEach(g => g.classList.add('gallery-hidden'));
+    tab.classList.add('active');
+    document.getElementById('gallery-' + tab.dataset.filter).classList.remove('gallery-hidden');
+  });
+});
